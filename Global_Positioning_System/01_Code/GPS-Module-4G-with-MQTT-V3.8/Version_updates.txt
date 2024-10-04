@@ -1,0 +1,9 @@
+######################### Description of the version ##########################
+
+This version upgrades V-3.7. So all the features of V-3.7 includes here along with new features those
+are implemented here as below-
+
+1. Flash memory chip used with hardware and firmware includes data storing facility in absence of network.
+
+
+

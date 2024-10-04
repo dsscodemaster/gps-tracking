@@ -1,0 +1,104 @@
+AT+QGNSSC=1	//GNSS Power On
+OK
+
+AT+QGNSSRD="NMEA/RMC" 
++QGNSSRD: $GNRMC,125041.578,V,,,,,0.00,0.00,040721,,,N*5A
+
+OK
+
+AT+QGNSSCMD=0,"$PMTK104*37"	//PMTK_CMD_FULL_COLD_START
+OK
+
+AT+QGNSSCMD=0,"$PMTK220,1000*1F"	//220 PMTK_SET_POS_FIX
+OK
+
++QGNSSCMD: $PMTK001,220,3,1000*1D
+
+
+AT+QGNSSCMD=0,"$PMTK011,MTKGPS*08"	//PMTK_TXT_MSG
+OK
+
+AT+QGREFLOC=22.577295,88.431960 // Ref. Location
+OK
+
+AT+QGREFLOC?
++QGREFLOC: 22.577295,88.431960
+
+OK
+
+
+AT+QGNSSCMD=0,"$PMTK353,1,1,1,1,0*2B" // Search GPS+GLONASS+GALILEO+GALILEO_FULL_Enable
+OK
+
++QGNSSCMD: $PMTK001,353,3,1,1,1,1,0,15*01
+
+AT+QGNSSCMD=0,"$PMTK386,0.3*3E"	//PMTK_API_SET_STATIC_NAV_THD
+
+
+22.577045,088.431445
+sudo chmod a+rw /dev/ttyACM0 //USB permission
+
+Packet Type: 353 PMTK_API_SET_GNSS_SEARCH_MODE:-
+------------------------------------------------
+
+This command is used to configure the receiver to start searching satellite systems.
+
+Data Field:
+  $PMTK353,GPS_Enable,GLONASS_Enable,GALILEO_Enable,GALILEO_FULL_Enable,Reserved
+Example:
+  $PMTK353,1,1,0,0,0*2B<CR><LF>: Search GPS+GLONASS
+Response:
+  $PMTK001,353,3,1,1,0,0,0,3*36<CR><LF>
+Field Description
+$ Each NMEA message starts with „$‟
+PMTK MTK proprietary message
+Packet Type 353
+GPS_Enable
+„0‟=Disable (DO NOT search GPS satellites)
+„1‟or non-ZERO: search GPS satellites
+GLONASS_Enable
+„0‟=Disable (DO NOT search GLONASS satellites)
+„1‟or non-ZERO: search GLONASS satellites
+GALILEO_Enable
+„0‟=Disable (DO NOT search Galileo satellites)
+„1‟or non-ZERO: search Galileo satellites
+GALILEO_FULL_Enable
+„0‟=Disable (DO NOT search Galileo full mode satellites)
+„1‟or non-ZERO: search Galileo satellites
+Reserved Always 0
+
+
+Note:-
+
+1. Actually GLONASS only and Galileo only modes are only for testing purpose. Please use
+   GPS+GLONASS, GPS+Galileo or GPS+GLONASS+Galileo in the real application.
+2. When the receiver is fixed by GPS+GLONASS+Galileo, the maximum frequency supported is 5Hz.
+3. For more details about talker ID, please refer to Table 9.
+
+
+Packet Type: 386 PMTK_API_SET_STATIC_NAV_THD:-
+----------------------------------------------
+
+This message is used to set the speed threshold for static navigation. If the actual speed is below the
+threshold, the output position will keep the same and output speed will be zero. This function is disabled if
+the threshold is set to 0.
+
+Data Field:
+$PMTK386,Speed_threshold
+Example:
+$PMTK386,0.3*3E<CR><LF>
+Response:
+$PMTK001,386,3*3D<CR><LF>
+Field Description
+$ Each NMEA message starts with „$‟
+PMTK MTK proprietary message
+Packet Type 386
+Speed Threshold 0~2m/s
+* End character of data field
+Checksum Hexadecimal checksum
+<CR><LF> Each NMEA message ends with „CR‟ and „LF‟
+NOTES
+Quectel
+
+Divsoft-2.4G, dssa#2018
+-----------------------------------------------------

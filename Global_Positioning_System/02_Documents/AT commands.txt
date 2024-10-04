@@ -1,0 +1,343 @@
+
+--CHECK COMMUNICAITON-
+AT<CR>
+AT<CR>
+<CR><LF>
+OK<CR><LF>
+
+--ENABLE ERROR CODE IN NUMERIC FORMAT-
+AT+CMEE=1<CR>
+AT+CMEE=1<CR>
+<CR><LF>
+OK<CR><LF>
+
+--ENABLE ERROR CODE IN NUMERIC FORMAT-
+AT+GSN<CR>
+AT+GSN<CR>
+<CR><LF>
+864388041598644<CR><LF>
+<CR><LF>
+OK<CR><LF>
+
+--CHECK SIM--
+AT+CPIN?<CR>
+AT+CPIN?<CR>
+<CR><LF>
++CPIN: READY<CR><LF>
+<CR><LF>
+OK<CR><LF>
+
+
+--CHECK SIM--   +CREG: (0,1) FOR LOCAL NETWORK AND (0,5) FOR ROAMING
+AT+CREG?<CR>
+AT+CREG?<CR>
+<CR><LF>
++CREG: 0,1<CR><LF>
+<CR><LF>
+OK<CR><LF>
+
+
+__________________________SMS SECTION ________________________
+
+
+--ENABLE SMS RECEIPTON--
+AT+QURCCFG="urcport","uart1"<CR>
+AT+QURCCFG="urcport","uart1"<CR>
+<CR><LF>
+OK<CR><LF>
+
+
+--SETUP SMS IN TEXT MODE--
+AT+CMGF=1<CR>
+AT+CMGF=1<CR>
+<CR><LF>
+OK<CR><LF>
+
+--SET SEND TO MOBILE NUMBER--
+AT+CMGS="9886434160"<CR>
+AT+CMGS="9886434160"<CR>
+<CR><LF>
+>
+
+--SEND MESSAGE-- NOTE AFTER MESSAGE YOU HAVE TO SEND 0X1A (HEX),
+SMS SEND FROM EC20<SUB>SMS SEND FROM EC20<CR><LF>
++CMGS: 202<CR><LF>
+<CR><LF>
+OK<CR><LF>
+
+
+-- WHEN MESSAGE RECEIVED, YOU WILL GET BELOW DATA ON YOUR PORT, Here 3 is the message number, it might be different for you
+<CR><LF>
++CMTI: "ME",3<CR><LF>
+
+-- Read sms--
+AT+CMGR=3<CR>
+AT+CMGR=3<CR>
+<CR><LF>
++CMGR: "REC UNREAD","+919886434160",,"21/09/08,13:01:43+22"<CR><LF>
+ Received your message <CR><LF>
+<CR><LF>
+OK<CR><LF
+
+-- delete all message --
+AT+CMGD=1,4<CR>
+AT+CMGD=1,4<CR>
+<CR><LF>
+OK<CR><LF>
+
+__________________________END SMS SECTION ________________________
+
+__________________clock ____________________
+
+AT+CTZU=3<CR>
+AT+CTZU=3<CR>
+<CR><LF>
+OK<CR><LF>
+
+AT+CCLK?<CR>
+AT+CCLK?<CR>
+<CR><LF>
++CCLK: "21/09/08,13:18:34+22"<CR><LF>
+<CR><LF>
+OK<CR><LF>
+
+__________________end of clock ____________________
+
+
+
+__________________transmit data to server___________________
+
+
+--con para for http server--				restart modem if this fails
+AT+QHTTPCFG="contextid",1<CR>
+AT+QHTTPCFG="contextid",1<CR>
+<CR><LF>
+OK<CR><LF>
+
+AT+QHTTPCFG="responseheader",1<CR>			restart modem if this fails
+AT+QHTTPCFG="responseheader",1<CR>
+<CR><LF>
+OK<CR><LF>
+
+--set apn username and password--			restart modem if this fails
+AT+QICSGP=1,1,"airtelgprs.com","",""<CR>
+AT+QICSGP=1,1,"airtelgprs.com","",""<CR>
+<CR><LF>
+OK<CR><LF>
+
+--activate--								restart modem if this fails
+AT+QIACT=1<CR>
+AT+QIACT=1<CR>
+<CR><LF>
+OK<CR><LF>
+
+--get ip address--							restart modem if this fails
+AT+QIACT?<CR>
+AT+QIACT?<CR>
+<CR><LF>
++QIACT: 1,1,1,"100.107.242.183"<CR><LF>
+<CR><LF>
+OK<CR><LF>
+
+
+	_______ for get request___
+	
+	--SETUP URL--
+
+		this is the get request link http://receivedata.exploringembeddedsystems.com/getRequest.aspx?SYSTEM_ID=10&SENSOR_ID=lm35&SENSOR_TYPE=TEMPERATURE&VALUE=22
+
+	-- set up url -- note 124 is the length of the get request		restart modem if this fails
+	AT+QHTTPURL=124,60<CR>
+	AT+QHTTPURL=124,60<CR>
+	<CR><LF>
+	CONNECT<CR><LF>
+
+	--send data (get request url)--	
+	http://receivedata.exploringembeddedsystems.com/getRequest.aspx?SYSTEM_ID=10&SENSOR_ID=lm35&SENSOR_TYPE=TEMPERATURE&VALUE=22<CR>
+
+	-- get request --
+	AT+QHTTPGET=80<CR>
+	AT+QHTTPGET=80<CR>
+	<CR><LF>
+	OK<CR><LF>
+	<CR><LF>
+	+QHTTPGET: 0,200,196<CR><LF>
+
+	-- read response --
+	AT+QHTTPREAD=80<CR>
+	AT+QHTTPREAD=80<CR>
+	<CR><LF>
+	CONNECT<CR><LF>
+	HTTP/1.1 200 OK<CR><LF>
+	Cache-Control: private<CR><LF>
+	Content-Type: text/html; charset=utf-8<CR><LF>
+	Server: Microsoft-IIS/8.5<CR><LF>
+	X-AspNet-Version: 4.0.30319<CR><LF>
+	X-Powered-By: ASP.NET<CR><LF>
+	X-Powered-By-Plesk: PleskWin<CR><LF>
+	Date: Wed, 08 Sep 2021 08:25:04 GMT<CR><LF>
+	Content-Length: 196<CR><LF>
+	<CR><LF>
+	{"SYSTEM_ID":"10","SENSOR_ID":"lm35","SENSOR_TYPE":"TEMPERATURE","VALUE":"22","DATETIME":"2021/09/08 13:55:05","STATUS":"SUCCESS","NO_OF_RECORDS":"115","IP":"223.186.158.122","FAILURE_MESSAGE":""}<CR><LF>
+	OK<CR><LF>
+	<CR><LF>
+	+QHTTPREAD: 0<CR><LF>
+
+	_______ end get request__
+	
+	
+	
+	_______ for post request___
+	
+	--SETUP URL--
+
+		this is the url http://receivedata.exploringembeddedsystems.com/PostRequest.aspx
+
+	-- set up url -- note 64 is the length of the get request
+	AT+QHTTPURL=64,60<CR>
+	AT+QHTTPURL=64,60<CR>
+	<CR><LF>
+	CONNECT<CR><LF>
+	
+	--send url--
+	http://receivedata.exploringembeddedsystems.com/PostRequest.aspx
+	
+	--send body size-
+	AT+QHTTPPOST=62,80,80<CR>
+	AT+QHTTPPOST=62,80,80<CR>
+	<CR><LF>
+	CONNECT<CR><LF>
+	
+	--send data--
+	SYSTEM_ID=10&SENSOR_ID=lm35&SENSOR_TYPE=TEMPERATURE&VALUE=22.3
+	
+	--post data to server--
+	AT+QHTTPPOST=62,80,80	
+	OK<CR><LF>
+	<CR><LF>
+	+QHTTPPOST: 0,200,198<CR><LF>
+
+
+	--view received response--
+	AT+QHTTPREAD=80<CR>
+	AT+QHTTPREAD=80<CR>
+	<CR><LF>
+	CONNECT<CR><LF>
+	HTTP/1.1 200 OK<CR><LF>
+	Cache-Control: private<CR><LF>
+	Content-Type: text/html; charset=utf-8<CR><LF>
+	Server: Microsoft-IIS/8.5<CR><LF>
+	X-AspNet-Version: 4.0.30319<CR><LF>
+	X-Powered-By: ASP.NET<CR><LF>
+	X-Powered-By-Plesk: PleskWin<CR><LF>
+	Date: Wed, 08 Sep 2021 08:57:14 GMT<CR><LF>
+	Content-Length: 198<CR><LF>
+	<CR><LF>
+	{"SYSTEM_ID":"10","SENSOR_ID":"lm35","SENSOR_TYPE":"TEMPERATURE","VALUE":"22.3","DATETIME":"2021/09/08 14:27:14","STATUS":"SUCCESS","NO_OF_RECORDS":"117","IP":"223.186.158.122","FAILURE_MESSAGE":""}<CR><LF>
+	OK<CR><LF>
+	<CR><LF>
+	+QHTTPREAD: 0<CR><LF>
+
+	_______ end post request__
+	
+	
+	
+__________________end of transmit data to server___________________
+
+
+
+_______________________MQTT to mosquitto mqqt broker_______________________
+
+//below are the mqqt commands
+AT+QMTOPEN=0,"test.mosquitto.org",1883
+AT+QMTCONN=0,"ec20conn","",""
+AT+QMTSUB=0,1,"topicees",1
+AT+QMTPUB=0,1,1,0,"topicees"
+
+--open a connection with mosquitto server on port 1883--
+AT+QMTOPEN=0,"test.mosquitto.org",1883<CR>
+
+AT+QMTOPEN=0,"45.64.237.125",8883
+
+AT+QMTOPEN=0,"test.mosquitto.org",1883<CR>
+<CR><LF>
+OK<CR><LF>
+<CR><LF>
++QMTOPEN: 0,0<CR><LF>
+
+--connect using connection id username id, username and password--
+AT+QMTCONN=0,"ec20connees","",""<CR>
+AT+QMTCONN=0,"ec20connees","",""<CR>
+<CR><LF>
+OK<CR><LF>
+<CR><LF>
++QMTCONN: 0,0,0<CR><LF>
+
+--subscribe to topic "topicees"--
+AT+QMTSUB=0,1,"topicees",1<CR>
+AT+QMTSUB=0,1,"topicees",1<CR>
+<CR><LF>
+OK<CR><LF>
+<CR><LF>
++QMTSUB: 0,1,0,1<CR><LF>
+
+-- publish on topic topicees--
+AT+QMTPUB=0,1,1,0,"topicees"<CR>
+AT+QMTPUB=0,1,1,0,"topicees"<CR>
+
+AT+QMTPUB=0,1,1,0,"test"<CR>
+
+<CR><LF>
+>
+
+--send message -- message should end with 0x1a
+message from ec20<SUB>message from ec20<CR>
+<CR><LF>
+OK<CR><LF>
+<CR><LF>
++QMTRECV: 0,1,"topicees","message from ec20<CR>
+"<CR><LF>
+<CR><LF>
++QMTPUB: 0,1,0<CR><LF>
+
+---------------------------------------------
+AT+QMTOPEN=0,"45.64.237.125",8883
+AT+QMTCONN=0,"www","",""
+AT+QMTPUB=0,1,1,0,"test",43
+---------------------------------------------
+
+-- received message to subscribed topic will show up like this --
++QMTRECV: 0,0,"topicees","Test message from topic EES"<CR><LF>
+
+
+_______________________end MQQT to mosquitto mqqt broker_______________________
+
+
+
+
+
+3.2. Application of GNSS <nmeasrc>
+When GNSS is turned on and <nmeasrc> is set to 1, NMEA sentences can be acquired directly via
+AT+QGPSGNMEA.
+AT+QGPSCFG="nmeasrc",1 //Set <nmeasrc> to 1 to enable acquisition of NMEA
+sentences via AT+QGPSGNMEA.
+OK
+AT+QGPSGNMEA="GGA" //Obtain GGA sentence.
++QGPSGNMEA: $GPGGA,103647.0,3150.721154,N,11711.925873,E,1,02,4.7,59.8,M,-2.0,M,,*77
+OK
+AT+QGPSCFG="nmeasrc",0 //Set <nmeasrc> to 0 to disable acquisition of NMEA
+sentences via AT+QGPSGNMEA.
+OK
+AT+QGPSGNMEA="GGA"
++CME ERROR: 507 //Acquisition of NMEA sentences via AT+QGPSGNMEA
+was disabled, and thus GGA sentences cannot be obtained.
+
+
+https://github.com/stm32duino/BoardManagerFiles/raw/master/package_stmicroelectronics_index.json
+
+
+
+
+
+
+

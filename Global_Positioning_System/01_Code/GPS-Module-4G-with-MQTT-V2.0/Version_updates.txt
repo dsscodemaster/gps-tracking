@@ -1,0 +1,13 @@
+######################### Description of the version ##########################
+
+1. This version of GPS module with MQTT includes basic GSM,GPS-GNSS and GPRS connection establishment
+and enable with MQTT configuration and connection with network.
+
+2. This version simply fetch location through GPS in NMEA standard and using NMEA parser get the latitude,
+longitude and speed from NMEA:RMC sentence.
+
+3. Using MQTT basic configuration and connection that location info sent to server. 
+
+4. Many of MQTT configuration and connection parameters are hard coded in this version and no connection 
+checking or reconnection algorithm is implemented in this version.
+

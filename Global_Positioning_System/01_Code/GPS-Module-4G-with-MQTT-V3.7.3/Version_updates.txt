@@ -1,0 +1,11 @@
+######################### Description of the version ##########################
+
+This version upgrades V-3.7.2 So all the features of V-3.7.2 includes here along with new features those
+are implemented here as below-
+
+1. Remaining battery voltage percentage included in data packet to send to server.
+
+2. Metal attachment/deattachment status included in data packet to send to server.
+
+
+

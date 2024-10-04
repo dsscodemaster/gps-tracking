@@ -1,0 +1,16 @@
+######################### Description of the version ##########################
+
+This version upgrades V-3.5. So all the features of V-3.5 includes here along with new features those
+are implemented here as below-
+
+1. Due to positioning inaccuracy, GPS NMEA sentence format changed to GGA along with previous RMC format
+maintained. GGA format gives various accuracy parameters with auto correction while RMC gives speed data.
+
+2. GPS data filtering is done on basis of various accuracy parameters to increase accuracy in positioning
+on map.
+
+3. Modification of client id in MQTT to make it unique for every devices to run more than one devices
+simultaneously.
+
+
+

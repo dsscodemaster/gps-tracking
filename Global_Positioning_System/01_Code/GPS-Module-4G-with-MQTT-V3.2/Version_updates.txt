@@ -1,0 +1,12 @@
+######################### Description of the version ##########################
+
+This version upgrades V-3.1. So all the features of V-3.1 includes here along with new features those
+are implemented here as below-
+
+1. SIM detection is implemented only in start-up and on reconnection. No continuous periodic 
+SIM detection checking is there.
+
+2. GPS fix quality check is implemented along with more frquent data collection.
+
+3. Data sending to server frquency increased.
+

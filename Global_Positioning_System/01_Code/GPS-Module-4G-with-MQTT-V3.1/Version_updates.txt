@@ -1,0 +1,7 @@
+######################### Description of the version ##########################
+
+This version upgrades V-3.0. So all the features of V-3.0 includes here along with new features those
+are implemented here as below-
+
+1. SIM detection at a periodic interval and SIM initialization status at start is implemented.
+

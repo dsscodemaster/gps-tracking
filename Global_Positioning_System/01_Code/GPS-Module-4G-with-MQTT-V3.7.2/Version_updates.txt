@@ -1,0 +1,14 @@
+######################### Description of the version ##########################
+
+This version upgrades V-3.7. So all the features of V-3.7 includes here along with new features those
+are implemented here as below-
+
+1. Battery's operational voltage range extended by additional hardware circuit and co-responding changes
+in firmware to read the current voltage level and set battery percentage according to extended voltage range.
+
+2. Checking of battery voltage from different analog pin. Previously it was modem voltage supply pin that to read
+for remaining voltage percentage, now battery volatge pin is connected with a ADC pin of modem and controller reads
+that pin for current battery voltage level.
+
+
+

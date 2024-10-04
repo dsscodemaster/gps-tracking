@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group name="GPS-Module-4G-with-MQTT-V2.0">
+            <file>file:/E:/Mrinmoy/Projects/GPS_Module/03_TestCode/GPS-Module-4G-with-MQTT-V2.0/Application/App_gps_comm_interface.h</file>
+            <file>file:/E:/Mrinmoy/Projects/GPS_Module/03_TestCode/GPS-Module-4G-with-MQTT-V2.0/Application/App_gps_comm_interface.c</file>
+            <file>file:/E:/Mrinmoy/Projects/GPS_Module/03_TestCode/GPS-Module-4G-with-MQTT-V2.0/Quectel/Quectel_interface.c</file>
+            <file>file:/E:/Mrinmoy/Projects/GPS_Module/03_TestCode/GPS-Module-4G-with-MQTT-V2.0/Application/App_quectel_common_interface.c</file>
+            <file>file:/E:/Mrinmoy/Projects/GPS_Module/03_TestCode/GPS-Module-4G-with-MQTT-V2.0/Application/App_gprs_comm_interface.c</file>
+            <file>file:/E:/Mrinmoy/Projects/GPS_Module/03_TestCode/GPS-Module-4G-with-MQTT-V2.0/Application/App_user_interface.c</file>
+            <file>file:/E:/Mrinmoy/Projects/GPS_Module/03_TestCode/GPS-Module-4G-with-MQTT-V2.0/main.c</file>
+            <file>file:/E:/Mrinmoy/Projects/GPS_Module/03_TestCode/GPS-Module-4G-with-MQTT-V2.0/Application/App_Setup.c</file>
+            <file>file:/E:/Mrinmoy/Projects/GPS_Module/03_TestCode/GPS-Module-4G-with-MQTT-V2.0/mcc_generated_files/tmr3.c</file>
+            <file>file:/E:/Mrinmoy/Projects/GPS_Module/03_TestCode/GPS-Module-4G-with-MQTT-V2.0/Application/App_gprs_comm_interface.h</file>
+        </group>
+        <group name="GPS-Module-4G-with-MQTT-V3.0">
+            <file>file:/E:/Mrinmoy/Projects/GPS_Module/01_Code/GPS-Module-4G-with-MQTT-V3.0/Application/App_Setup.c</file>
+            <file>file:/E:/Mrinmoy/Projects/GPS_Module/01_Code/GPS-Module-4G-with-MQTT-V3.0/Application/App_gps_comm_interface.c</file>
+            <file>file:/E:/Mrinmoy/Projects/GPS_Module/01_Code/GPS-Module-4G-with-MQTT-V3.0/common/tick.c</file>
+            <file>file:/E:/Mrinmoy/Projects/GPS_Module/01_Code/GPS-Module-4G-with-MQTT-V3.0/Application/App_gprs_comm_interface.c</file>
+            <file>file:/E:/Mrinmoy/Projects/GPS_Module/01_Code/GPS-Module-4G-with-MQTT-V3.0/main.c</file>
+            <file>file:/E:/Mrinmoy/Projects/GPS_Module/01_Code/GPS-Module-4G-with-MQTT-V3.0/Application/App_gps_comm_interface.h</file>
+            <file>file:/E:/Mrinmoy/Projects/GPS_Module/01_Code/GPS-Module-4G-with-MQTT-V3.0/common/delay.c</file>
+            <file>file:/E:/Mrinmoy/Projects/GPS_Module/01_Code/GPS-Module-4G-with-MQTT-V3.0/Application/App_gprs_comm_interface.h</file>
+            <file>file:/E:/Mrinmoy/Projects/GPS_Module/01_Code/GPS-Module-4G-with-MQTT-V3.0/Quectel/Quectel_interface.c</file>
+            <file>file:/E:/Mrinmoy/Projects/GPS_Module/01_Code/GPS-Module-4G-with-MQTT-V3.0/Application/App_quectel_common_interface.h</file>
+            <file>file:/E:/Mrinmoy/Projects/GPS_Module/01_Code/GPS-Module-4G-with-MQTT-V3.0/mcc_generated_files/tmr3.c</file>
+            <file>file:/E:/Mrinmoy/Projects/GPS_Module/01_Code/GPS-Module-4G-with-MQTT-V3.0/Application/App_user_interface.c</file>
+            <file>file:/E:/Mrinmoy/Projects/GPS_Module/01_Code/GPS-Module-4G-with-MQTT-V3.0/Application/App_quectel_common_interface.c</file>
+            <file>file:/E:/Mrinmoy/Projects/GPS_Module/01_Code/GPS-Module-4G-with-MQTT-V3.0/Application/App_user_interface.h</file>
+        </group>
+        <group name="GPS-Module-4G-with-MQTT-V3.1">
+            <file>file:/E:/Mrinmoy/Projects/GPS_Module/01_Code/GPS-Module-4G-with-MQTT-V3.1/Quectel/Quectel_interface.c</file>
+            <file>file:/E:/Mrinmoy/Projects/GPS_Module/01_Code/GPS-Module-4G-with-MQTT-V3.1/Application/App_quectel_common_interface.h</file>
+            <file>file:/E:/Mrinmoy/Projects/GPS_Module/01_Code/GPS-Module-4G-with-MQTT-V3.1/main.c</file>
+            <file>file:/E:/Mrinmoy/Projects/GPS_Module/01_Code/GPS-Module-4G-with-MQTT-V3.1/Application/App_Setup.c</file>
+            <file>file:/E:/Mrinmoy/Projects/GPS_Module/01_Code/GPS-Module-4G-with-MQTT-V3.1/Quectel/Quectel_interface.h</file>
+            <file>file:/E:/Mrinmoy/Projects/GPS_Module/01_Code/GPS-Module-4G-with-MQTT-V3.1/Application/App_gprs_comm_interface.c</file>
+            <file>file:/E:/Mrinmoy/Projects/GPS_Module/01_Code/GPS-Module-4G-with-MQTT-V3.1/Application/App_user_interface.c</file>
+            <file>file:/E:/Mrinmoy/Projects/GPS_Module/01_Code/GPS-Module-4G-with-MQTT-V3.1/Application/App_gps_comm_interface.c</file>
+            <file>file:/E:/Mrinmoy/Projects/GPS_Module/01_Code/GPS-Module-4G-with-MQTT-V3.1/Application/App_quectel_common_interface.c</file>
+        </group>
+        <group name="GPS-Module-4G-with-MQTT-V3.2">
+            <file>file:/E:/Mrinmoy/Projects/GPS_Module/01_Code/GPS-Module-4G-with-MQTT-V3.2/main.c</file>
+            <file>file:/E:/Mrinmoy/Projects/GPS_Module/01_Code/GPS-Module-4G-with-MQTT-V3.2/Application/App_Setup.c</file>
+            <file>file:/E:/Mrinmoy/Projects/GPS_Module/01_Code/GPS-Module-4G-with-MQTT-V3.2/Quectel/Quectel_interface.c</file>
+            <file>file:/E:/Mrinmoy/Projects/GPS_Module/01_Code/GPS-Module-4G-with-MQTT-V3.2/Application/App_quectel_common_interface.c</file>
+            <file>file:/E:/Mrinmoy/Projects/GPS_Module/01_Code/GPS-Module-4G-with-MQTT-V3.2/Application/App_gps_comm_interface.c</file>
+            <file>file:/E:/Mrinmoy/Projects/GPS_Module/01_Code/GPS-Module-4G-with-MQTT-V3.2/Application/App_gprs_comm_interface.c</file>
+            <file>file:/E:/Mrinmoy/Projects/GPS_Module/01_Code/GPS-Module-4G-with-MQTT-V3.2/GPS_GNSS/NMEA_parser.c</file>
+            <file>file:/E:/Mrinmoy/Projects/GPS_Module/01_Code/GPS-Module-4G-with-MQTT-V3.2/mcc_generated_files/pin_manager.c</file>
+        </group>
+        <group name="GPS-Module-4G-with-MQTT-V3.3">
+            <file>file:/E:/Mrinmoy/Projects/GPS_Module/01_Code/GPS-Module-4G-with-MQTT-V3.3/mcc_generated_files/tmr3.h</file>
+            <file>file:/E:/Mrinmoy/Projects/GPS_Module/01_Code/GPS-Module-4G-with-MQTT-V3.3/mcc_generated_files/pin_manager.c</file>
+            <file>file:/E:/Mrinmoy/Projects/GPS_Module/01_Code/GPS-Module-4G-with-MQTT-V3.3/Quectel/Quectel_interface.c</file>
+            <file>file:/E:/Mrinmoy/Projects/GPS_Module/01_Code/GPS-Module-4G-with-MQTT-V3.3/main.c</file>
+            <file>file:/E:/Mrinmoy/Projects/GPS_Module/01_Code/GPS-Module-4G-with-MQTT-V3.3/mcc_generated_files/uart2.c</file>
+            <file>file:/E:/Mrinmoy/Projects/GPS_Module/01_Code/GPS-Module-4G-with-MQTT-V3.3/Application/App_user_interface.c</file>
+            <file>file:/E:/Mrinmoy/Projects/GPS_Module/01_Code/GPS-Module-4G-with-MQTT-V3.3/hardware/bsp.h</file>
+            <file>file:/E:/Mrinmoy/Projects/GPS_Module/01_Code/GPS-Module-4G-with-MQTT-V3.3/mcc_generated_files/tmr3.c</file>
+            <file>file:/E:/Mrinmoy/Projects/GPS_Module/01_Code/GPS-Module-4G-with-MQTT-V3.3/Application/App_quectel_common_interface.c</file>
+            <file>file:/E:/Mrinmoy/Projects/GPS_Module/01_Code/GPS-Module-4G-with-MQTT-V3.3/Application/App_gprs_comm_interface.c</file>
+            <file>file:/E:/Mrinmoy/Projects/GPS_Module/01_Code/GPS-Module-4G-with-MQTT-V3.3/common/tick.c</file>
+            <file>file:/E:/Mrinmoy/Projects/GPS_Module/01_Code/GPS-Module-4G-with-MQTT-V3.3/Application/App_Setup.c</file>
+            <file>file:/E:/Mrinmoy/Projects/GPS_Module/01_Code/GPS-Module-4G-with-MQTT-V3.3/mcc_generated_files/system.c</file>
+            <file>file:/E:/Mrinmoy/Projects/GPS_Module/01_Code/GPS-Module-4G-with-MQTT-V3.3/common/delay.c</file>
+            <file>file:/E:/Mrinmoy/Projects/GPS_Module/01_Code/GPS-Module-4G-with-MQTT-V3.3/Application/App_gprs_comm_interface.h</file>
+            <file>file:/E:/Mrinmoy/Projects/GPS_Module/01_Code/GPS-Module-4G-with-MQTT-V3.3/Application/App_user_interface.h</file>
+            <file>file:/E:/Mrinmoy/Projects/GPS_Module/01_Code/GPS-Module-4G-with-MQTT-V3.3/Application/App_gps_comm_interface.c</file>
+        </group>
+        <group name="GPS-Module-4G-with-MQTT-V3.4">
+            <file>file:/E:/Mrinmoy/Projects/GPS_Module/01_Code/GPS-Module-4G-with-MQTT-V3.4/Application/App_setup.h</file>
+            <file>file:/E:/Mrinmoy/Projects/GPS_Module/01_Code/GPS-Module-4G-with-MQTT-V3.4/Application/App_Setup.c</file>
+            <file>file:/E:/Mrinmoy/Projects/GPS_Module/01_Code/GPS-Module-4G-with-MQTT-V3.4/mcc_generated_files/traps.c</file>
+            <file>file:/E:/Mrinmoy/Projects/GPS_Module/01_Code/GPS-Module-4G-with-MQTT-V3.4/common/delay.c</file>
+            <file>file:/E:/Mrinmoy/Projects/GPS_Module/01_Code/GPS-Module-4G-with-MQTT-V3.4/Application/App_user_interface.c</file>
+            <file>file:/E:/Mrinmoy/Projects/GPS_Module/01_Code/GPS-Module-4G-with-MQTT-V3.4/Quectel/Quectel_interface.h</file>
+            <file>file:/E:/Mrinmoy/Projects/GPS_Module/01_Code/GPS-Module-4G-with-MQTT-V3.4/mcc_generated_files/tmr3.c</file>
+            <file>file:/E:/Mrinmoy/Projects/GPS_Module/01_Code/GPS-Module-4G-with-MQTT-V3.4/Application/App_gprs_comm_interface.c</file>
+            <file>file:/E:/Mrinmoy/Projects/GPS_Module/01_Code/GPS-Module-4G-with-MQTT-V3.4/main.c</file>
+            <file>file:/E:/Mrinmoy/Projects/GPS_Module/01_Code/GPS-Module-4G-with-MQTT-V3.4/common/tick.c</file>
+            <file>file:/E:/Mrinmoy/Projects/GPS_Module/01_Code/GPS-Module-4G-with-MQTT-V3.4/Application/App_quectel_common_interface.c</file>
+            <file>file:/E:/Mrinmoy/Projects/GPS_Module/01_Code/GPS-Module-4G-with-MQTT-V3.4/Application/App_gps_comm_interface.c</file>
+            <file>file:/E:/Mrinmoy/Projects/GPS_Module/01_Code/GPS-Module-4G-with-MQTT-V3.4/Quectel/Quectel_interface.c</file>
+            <file>file:/E:/Mrinmoy/Projects/GPS_Module/01_Code/GPS-Module-4G-with-MQTT-V3.4/mcc_generated_files/uart2.c</file>
+            <file>file:/E:/Mrinmoy/Projects/GPS_Module/01_Code/GPS-Module-4G-with-MQTT-V3.4/Application/App_gprs_comm_interface.h</file>
+            <file>file:/E:/Mrinmoy/Projects/GPS_Module/01_Code/GPS-Module-4G-with-MQTT-V3.4/mcc_generated_files/pin_manager.c</file>
+            <file>file:/E:/Mrinmoy/Projects/GPS_Module/01_Code/GPS-Module-4G-with-MQTT-V3.4/mcc_generated_files/traps.h</file>
+            <file>file:/E:/Mrinmoy/Projects/GPS_Module/01_Code/GPS-Module-4G-with-MQTT-V3.4/Application/App_user_interface.h</file>
+        </group>
+        <group name="GPS-Module-4G-with-MQTT-V3.5">
+            <file>file:/E:/Mrinmoy/Projects/GPS_Module/01_Code/GPS-Module-4G-with-MQTT-V3.5/mcc_generated_files/tmr3.h</file>
+            <file>file:/E:/Mrinmoy/Projects/GPS_Module/01_Code/GPS-Module-4G-with-MQTT-V3.5/Quectel/Quectel_interface.c</file>
+            <file>file:/E:/Mrinmoy/Projects/GPS_Module/01_Code/GPS-Module-4G-with-MQTT-V3.5/mcc_generated_files/uart1.c</file>
+            <file>file:/E:/Mrinmoy/Projects/GPS_Module/01_Code/GPS-Module-4G-with-MQTT-V3.5/Application/App_gps_comm_interface.c</file>
+            <file>file:/E:/Mrinmoy/Projects/GPS_Module/01_Code/GPS-Module-4G-with-MQTT-V3.5/Application/App_user_interface.c</file>
+            <file>file:/E:/Mrinmoy/Projects/GPS_Module/01_Code/GPS-Module-4G-with-MQTT-V3.5/mcc_generated_files/uart2.c</file>
+            <file>file:/E:/Mrinmoy/Projects/GPS_Module/01_Code/GPS-Module-4G-with-MQTT-V3.5/common/tick.c</file>
+            <file>file:/E:/Mrinmoy/Projects/GPS_Module/01_Code/GPS-Module-4G-with-MQTT-V3.5/main.c</file>
+            <file>file:/E:/Mrinmoy/Projects/GPS_Module/01_Code/GPS-Module-4G-with-MQTT-V3.5/Application/App_gprs_comm_interface.c</file>
+            <file>file:/E:/Mrinmoy/Projects/GPS_Module/01_Code/GPS-Module-4G-with-MQTT-V3.5/Application/App_Setup.c</file>
+            <file>file:/E:/Mrinmoy/Projects/GPS_Module/01_Code/GPS-Module-4G-with-MQTT-V3.5/Application/App_gprs_comm_interface.h</file>
+            <file>file:/E:/Mrinmoy/Projects/GPS_Module/01_Code/GPS-Module-4G-with-MQTT-V3.5/Application/App_quectel_common_interface.c</file>
+            <file>file:/E:/Mrinmoy/Projects/GPS_Module/01_Code/GPS-Module-4G-with-MQTT-V3.5/mcc_generated_files/tmr3.c</file>
+            <file>file:/E:/Mrinmoy/Projects/GPS_Module/01_Code/GPS-Module-4G-with-MQTT-V3.5/Application/App_quectel_common_interface.h</file>
+            <file>file:/E:/Mrinmoy/Projects/GPS_Module/01_Code/GPS-Module-4G-with-MQTT-V3.5/mcc_generated_files/pin_manager.c</file>
+        </group>
+        <group name="GPS-Module-4G-with-MQTT-V3.6">
+            <file>file:/E:/Mrinmoy/Projects/GPS_Module/01_Code/GPS-Module-4G-with-MQTT-V3.6/GPS_GNSS/NMEA_parser.c</file>
+            <file>file:/E:/Mrinmoy/Projects/GPS_Module/01_Code/GPS-Module-4G-with-MQTT-V3.6/Application/App_gps_comm_interface.h</file>
+            <file>file:/E:/Mrinmoy/Projects/GPS_Module/01_Code/GPS-Module-4G-with-MQTT-V3.6/Application/App_user_interface.c</file>
+            <file>file:/E:/Mrinmoy/Projects/GPS_Module/01_Code/GPS-Module-4G-with-MQTT-V3.6/Application/App_gprs_comm_interface.h</file>
+            <file>file:/E:/Mrinmoy/Projects/GPS_Module/01_Code/GPS-Module-4G-with-MQTT-V3.6/Application/App_gps_comm_interface.c</file>
+            <file>file:/E:/Mrinmoy/Projects/GPS_Module/01_Code/GPS-Module-4G-with-MQTT-V3.6/GPS_GNSS/NMEA_parser.h</file>
+            <file>file:/E:/Mrinmoy/Projects/GPS_Module/01_Code/GPS-Module-4G-with-MQTT-V3.6/Quectel/Quectel_interface.c</file>
+            <file>file:/E:/Mrinmoy/Projects/GPS_Module/01_Code/GPS-Module-4G-with-MQTT-V3.6/Application/App_quectel_common_interface.c</file>
+            <file>file:/E:/Mrinmoy/Projects/GPS_Module/01_Code/GPS-Module-4G-with-MQTT-V3.6/main.c</file>
+            <file>file:/E:/Mrinmoy/Projects/GPS_Module/01_Code/GPS-Module-4G-with-MQTT-V3.6/Application/App_gprs_comm_interface.c</file>
+            <file>file:/E:/Mrinmoy/Projects/GPS_Module/01_Code/GPS-Module-4G-with-MQTT-V3.6/Application/App_user_interface.h</file>
+            <file>file:/E:/Mrinmoy/Projects/GPS_Module/01_Code/GPS-Module-4G-with-MQTT-V3.6/Application/App_Setup.c</file>
+        </group>
+        <group name="GPS-Module-4G-with-MQTT-V3.7">
+            <file>file:/E:/Mrinmoy/Projects/GPS_Module/01_Code/GPS-Module-4G-with-MQTT-V3.7/main.c</file>
+            <file>file:/E:/Mrinmoy/Projects/GPS_Module/01_Code/GPS-Module-4G-with-MQTT-V3.7/Application/App_gprs_comm_interface.h</file>
+            <file>file:/E:/Mrinmoy/Projects/GPS_Module/01_Code/GPS-Module-4G-with-MQTT-V3.7/mcc_generated_files/tmr3.c</file>
+            <file>file:/E:/Mrinmoy/Projects/GPS_Module/01_Code/GPS-Module-4G-with-MQTT-V3.7/Application/App_gps_comm_interface.c</file>
+            <file>file:/E:/Mrinmoy/Projects/GPS_Module/01_Code/GPS-Module-4G-with-MQTT-V3.7/Application/App_gps_comm_interface.h</file>
+            <file>file:/E:/Mrinmoy/Projects/GPS_Module/01_Code/GPS-Module-4G-with-MQTT-V3.7/Application/App_gprs_comm_interface.c</file>
+        </group>
+        <group name="GPS-Module-4G-with-MQTT-V3.7.2">
+            <file>file:/E:/Mrinmoy/Projects/GPS_Module/01_Code/GPS-Module-4G-with-MQTT-V3.7.2/main.c</file>
+            <file>file:/E:/Mrinmoy/Projects/GPS_Module/01_Code/GPS-Module-4G-with-MQTT-V3.7.2/Application/App_Setup.c</file>
+            <file>file:/E:/Mrinmoy/Projects/GPS_Module/01_Code/GPS-Module-4G-with-MQTT-V3.7.2/Application/App_quectel_common_interface.c</file>
+            <file>file:/E:/Mrinmoy/Projects/GPS_Module/01_Code/GPS-Module-4G-with-MQTT-V3.7.2/Application/App_quectel_common_interface.h</file>
+            <file>file:/E:/Mrinmoy/Projects/GPS_Module/01_Code/GPS-Module-4G-with-MQTT-V3.7.2/Application/App_user_interface.c</file>
+            <file>file:/E:/Mrinmoy/Projects/GPS_Module/01_Code/GPS-Module-4G-with-MQTT-V3.7.2/Application/App_gprs_comm_interface.h</file>
+            <file>file:/E:/Mrinmoy/Projects/GPS_Module/01_Code/GPS-Module-4G-with-MQTT-V3.7.2/Application/App_gps_comm_interface.c</file>
+            <file>file:/E:/Mrinmoy/Projects/GPS_Module/01_Code/GPS-Module-4G-with-MQTT-V3.7.2/Application/App_gprs_comm_interface.c</file>
+        </group>
+        <group name="GPS-Module-4G-with-MQTT-V3.7.3">
+            <file>file:/E:/Mrinmoy/Projects/GPS_Module/01_Code/GPS-Module-4G-with-MQTT-V3.7.3/Application/App_gprs_comm_interface.c</file>
+            <file>file:/E:/Mrinmoy/Projects/GPS_Module/01_Code/GPS-Module-4G-with-MQTT-V3.7.3/Application/App_gprs_comm_interface.h</file>
+            <file>file:/E:/Mrinmoy/Projects/GPS_Module/01_Code/GPS-Module-4G-with-MQTT-V3.7.3/Application/App_quectel_common_interface.h</file>
+            <file>file:/E:/Mrinmoy/Projects/GPS_Module/01_Code/GPS-Module-4G-with-MQTT-V3.7.3/Application/App_quectel_common_interface.c</file>
+            <file>file:/E:/Mrinmoy/Projects/GPS_Module/01_Code/GPS-Module-4G-with-MQTT-V3.7.3/mcc_generated_files/pin_manager.c</file>
+            <file>file:/E:/Mrinmoy/Projects/GPS_Module/01_Code/GPS-Module-4G-with-MQTT-V3.7.3/Application/App_user_interface.c</file>
+            <file>file:/E:/Mrinmoy/Projects/GPS_Module/01_Code/GPS-Module-4G-with-MQTT-V3.7.3/Application/App_user_interface.h</file>
+            <file>file:/E:/Mrinmoy/Projects/GPS_Module/01_Code/GPS-Module-4G-with-MQTT-V3.7.3/main.c</file>
+            <file>file:/E:/Mrinmoy/Projects/GPS_Module/01_Code/GPS-Module-4G-with-MQTT-V3.7.3/Application/App_Setup.c</file>
+            <file>file:/E:/Mrinmoy/Projects/GPS_Module/01_Code/GPS-Module-4G-with-MQTT-V3.7.3/Application/App_gps_comm_interface.c</file>
+            <file>file:/E:/Mrinmoy/Projects/GPS_Module/01_Code/GPS-Module-4G-with-MQTT-V3.7.3/Application/App_gps_comm_interface.h</file>
+        </group>
+    </open-files>
+</project-private>

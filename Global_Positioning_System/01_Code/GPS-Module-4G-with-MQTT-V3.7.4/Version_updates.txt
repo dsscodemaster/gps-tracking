@@ -1,0 +1,9 @@
+######################### Description of the version ##########################
+
+This version upgrades V-3.7.3 So all the features of V-3.7.3 includes here along with new features those
+are implemented here as below-
+
+1. Altitude data fetched from NMEA sentence and included in data packet to sent to server.
+
+
+

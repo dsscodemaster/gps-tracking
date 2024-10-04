@@ -1,0 +1,13 @@
+######################### Description of the version ##########################
+
+This version upgrades V-3.6. So all the features of V-3.7 includes here along with new features those
+are implemented here as below-
+
+1. Battery voltage determination in case of low battery indication is modified to maintain integrity.
+
+2. Automatic power off in case battery voltage goes below 8%.
+
+3. Data upload frequency modified and GPS data fetching frequency linked with upload interval.
+
+
+
